@@ -1,0 +1,22 @@
+Här är färgerna i Hex-kod som vi andvänder i denna designen
+
+
+
+Vår svarta färg - #090909
+
+Vår vita färg - Vandlig vit - #FFFFFF
+
+Vår Blåa rubrik och detalj färg - #114ECD
+
+
+
+Färger till tjänste-rutorn
+
+Första rutan:Blå - #114ECD
+
+Andra rutan:Grön - #368635
+
+Tredje rutan:Gul - #FEDB57
+
+Fjärde rutan:Röd - #DC3948
+

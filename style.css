@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      font-family: theme('fontFamily.sans');
+      background-color: #090909;
+      color: #FAFAFA;
+    }
+  }
+
+.hide-scrollbar {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+  
+    /* Firefox */
+    scrollbar-width: none;
+  
+    /* Chrome, Safari, Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+#carouselContainer {
+  transition: background-color 0.5s ease; 
+}
+
+ul.custom-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+ul.custom-list li::before {
+  content: ''; /* Required for ::before content */
+  display: inline-block; /* Make it align with text */
+  width: 20px; /* Width of the custom bullet */
+  height: 20px; /* Height of the custom bullet */
+  background-size: contain; /* Resize image to fit the container */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  margin-right: 8px; /* Space between the bullet and the text */
+  vertical-align: middle; /* Align the bullet vertically with the text */
+}
+
+.green-check::before {
+  background-image: url('icons/check.png'); /* Green checkmark image */
+}
+
+.red-cross::before {
+  background-image: url('icons/minus.png'); /* Red cross image */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
